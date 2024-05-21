@@ -4,7 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
 import java.util.NoSuchElementException;
+
+import static webdriver.WebDriverManager.getDriver;
 
 public class UtilityMethods {
 
@@ -40,6 +43,33 @@ public class UtilityMethods {
         }
         Select dropdown = new Select(element);
         dropdown.selectByVisibleText(value);
+    }
+
+
+    public static int countElements(By locator) {
+
+        List<WebElement> elements = getDriver().findElements(locator);
+        return elements.size();
+
+    }
+
+
+    public static String getLastLetterFromElementText(By locator) {
+        WebElement element = getDriver().findElement(locator);
+        String text = element.getText().trim();
+
+        if (!text.isEmpty()) {
+            return text.substring(text.length() - 1);
+        }
+        return "";
+    }
+
+
+    public static int countChildElements(WebElement parentElement, By locator) {
+
+        List<WebElement> elements = parentElement.findElements(locator);
+        return elements.size();
+
     }
 
 

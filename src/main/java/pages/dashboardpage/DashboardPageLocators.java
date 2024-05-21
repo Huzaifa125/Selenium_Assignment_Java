@@ -30,16 +30,16 @@ public class DashboardPageLocators {
     //endregion
 
     //region Scenario 3 locators
-    public By skinCare_BTN = By.xpath("/html/body/div/div[1]/div[1]/section/nav/ul/li[4]/a");
-    public By sale1 = By.xpath("/html/body/div/div[2]/div/div/div/div/div[3]/div[1]/div[2]/span");
-    public By sale2 = By.xpath("/html/body/div/div[2]/div/div/div/div/div[3]/div[2]/div[2]/span");
-    public By sale3 = By.xpath("/html/body/div/div[2]/div/div/div/div/div[3]/div[6]/div[2]/span");
-    public By outOfStock1 = By.xpath("/html/body/div/div[2]/div/div/div/div/div[3]/div[1]/div[2]/div[3]/span");
-    public By outOfStock2 = By.xpath("/html/body/div/div[2]/div/div/div/div/div[3]/div[3]/div[2]/div[3]/span");
+    public static By skinCare_BTN = By.xpath("/html/body/div/div[1]/div[1]/section/nav/ul/li[4]/a");
+    public static By sale1 = By.xpath("/html/body/div/div[2]/div/div/div/div/div[3]/div[1]/div[2]/span");
+    public static By sale2 = By.xpath("/html/body/div/div[2]/div/div/div/div/div[3]/div[2]/div[2]/span");
+    public static By sale3 = By.xpath("/html/body/div/div[2]/div/div/div/div/div[3]/div[6]/div[2]/span");
+    public static By outOfStock1 = By.xpath("/html/body/div/div[2]/div/div/div/div/div[3]/div[1]/div[2]/div[3]/span");
+    public static By outOfStock2 = By.xpath("/html/body/div/div[2]/div/div/div/div/div[3]/div[3]/div[2]/div[3]/span");
     public By addToCart1_BTN = By.xpath("/html/body/div/div[2]/div/div/div/div/div[3]/div[2]/div[2]/div[3]/a/i");
     public By addToCart2_BTN = By.xpath("/html/body/div/div[2]/div/div/div/div/div[3]/div[4]/div[2]/div[3]/a/i");
-    public By quantity1_TXT = By.xpath("/html/body/div/div[2]/div/div/div/form/div/div[1]/table/tbody/tr[2]/td[5]/div/input");
-    public By quantity2_TXT = By.xpath("/html/body/div/div[2]/div/div/div/form/div/div[1]/table/tbody/tr[3]/td[5]/div/input");
+    public static By quantity1_TXT = By.xpath("/html/body/div/div[2]/div/div/div/form/div/div[1]/table/tbody/tr[2]/td[5]/div/input");
+    public static By quantity2_TXT = By.xpath("/html/body/div/div[2]/div/div/div/form/div/div[1]/table/tbody/tr[3]/td[5]/div/input");
 
     //endregion
 
@@ -48,7 +48,7 @@ public class DashboardPageLocators {
     public By products_TXT = By.xpath("//a[@class='prdocutname']");
     public By addToCartMen_BTN = By.xpath("/html/body/div/div[2]/div/div[2]/div/div[1]/div/div[2]/div/div/div[2]/form/fieldset/div[5]/ul/li/a");
     public By checkout_BTN = By.xpath("/html/body/div/div[2]/div/div/div/form/div/div[1]/div/a");
-    public By productInCart_TXT = By.xpath("/html/body/div/div[2]/div/div[1]/div/div[2]/table[3]/tbody/tr/td[2]/a");
+    public static By productInCart_TXT = By.xpath("/html/body/div/div[2]/div/div[1]/div/div[2]/table[3]/tbody/tr/td[2]/a");
     //endregion
 
 }
