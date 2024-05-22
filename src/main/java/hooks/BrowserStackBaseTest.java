@@ -11,7 +11,6 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 import utitlites.ExtentReportManager;
 import webdriver.BrowserStack;
-import webdriver.WebDriverManager;
 
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;

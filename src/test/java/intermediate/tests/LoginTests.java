@@ -17,7 +17,7 @@ import static webdriver.WebDriverManager.getDriver;
 
 
 @Listeners(utitlites.ExtentTestNGListener.class)
-public class LoginTests extends BrowserStackBaseTest {
+public class LoginTests extends BaseTest {
 
 
     @Test
