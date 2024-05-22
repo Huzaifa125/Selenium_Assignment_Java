@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import static webdriver.WebDriverManager.getDriver;
+import static webdriver.WebDriverSetup.getDriver;
 
 public class UtilityMethods {
 

@@ -10,7 +10,7 @@ import java.util.List;
 
 import static pages.cartpage.CartPageLocators.cart_BTN;
 import static utitlites.UtilityMethods.selectTextFromDropDown;
-import static webdriver.WebDriverManager.getDriver;
+import static webdriver.WebDriverSetup.getDriver;
 
 public class DashboardPage extends DashboardPageLocators {
 

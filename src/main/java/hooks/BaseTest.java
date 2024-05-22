@@ -4,7 +4,7 @@ import jdk.jfr.Description;
 import jdk.jfr.Name;
 import org.testng.annotations.*;
 import utitlites.ExtentReportManager;
-import webdriver.WebDriverManager;
+import webdriver.WebDriverSetup;
 
 import java.lang.reflect.Method;
 
@@ -26,8 +26,8 @@ public class BaseTest {
     @BeforeMethod
     @Parameters("browser")
     public void setUp(Method method,@Optional String browser) {
-        WebDriverManager.initializeDriver(browser);
-        WebDriverManager.getDriver().get(config.ConfigReader.getProperty("baseUrl"));
+        WebDriverSetup.initializeDriver(browser);
+        WebDriverSetup.getDriver().get(config.ConfigReader.getProperty("baseUrl"));
 
         try {
             test = extent.createTest(method.getName());
@@ -51,7 +51,7 @@ public class BaseTest {
 
     @AfterMethod
     public void tearDown() {
-        WebDriverManager.quitDriver();
+        WebDriverSetup.quitDriver();
     }
 
     @AfterClass

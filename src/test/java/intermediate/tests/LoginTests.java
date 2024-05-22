@@ -2,7 +2,6 @@ package intermediate.tests;
 
 import com.aventstack.extentreports.Status;
 import hooks.BaseTest;
-import hooks.BrowserStackBaseTest;
 import jdk.jfr.Description;
 import jdk.jfr.Name;
 import org.testng.Assert;
@@ -13,7 +12,7 @@ import pages.loginpage.LoginPage;
 import static pages.loginpage.LoginPageLocators.*;
 import static utitlites.ExtentReportManager.test;
 import static utitlites.UtilityMethods.getTextFromElement;
-import static webdriver.WebDriverManager.getDriver;
+import static webdriver.WebDriverSetup.getDriver;
 
 
 @Listeners(utitlites.ExtentTestNGListener.class)

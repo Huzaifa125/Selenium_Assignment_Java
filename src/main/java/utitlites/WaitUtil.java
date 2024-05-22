@@ -7,14 +7,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import webdriver.WebDriverManager;
 
 import java.time.Duration;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
-import static webdriver.WebDriverManager.getDriver;
-import static webdriver.WebDriverManager.setDriver;
+import static webdriver.WebDriverSetup.getDriver;
+import static webdriver.WebDriverSetup.setDriver;
 
 public class WaitUtil {
 

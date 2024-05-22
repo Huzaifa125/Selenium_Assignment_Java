@@ -6,21 +6,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.yaml.snakeyaml.Yaml;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
-import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 
-public class WebDriverManager {
+public class WebDriverSetup {
 
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
@@ -38,15 +34,18 @@ public class WebDriverManager {
 
             switch(browser.toLowerCase()) {
                 case "chrome":
-                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + ConfigReader.getProperty("chrome.driver.path"));
+//                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + ConfigReader.getProperty("chrome.driver.path"));
+                    WebDriverManager.chromedriver().setup();
                     driverInstance = new ChromeDriver();
                     break;
                 case "firefox":
-                    System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + ConfigReader.getProperty("firefox.driver.path"));
+//                    System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + ConfigReader.getProperty("firefox.driver.path"));
+                    WebDriverManager.firefoxdriver().setup();
                     driverInstance = new FirefoxDriver();
                     break;
                 case "edge":
-                    System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + ConfigReader.getProperty("edge.driver.path"));
+//                    System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + ConfigReader.getProperty("edge.driver.path"));
+                    WebDriverManager.edgedriver().setup();
                     driverInstance = new EdgeDriver();
                     break;
                 default:
