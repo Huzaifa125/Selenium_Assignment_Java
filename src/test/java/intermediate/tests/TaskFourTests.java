@@ -1,15 +1,18 @@
-package tests;
+package intermediate.tests;
 
 import com.aventstack.extentreports.Status;
 import hooks.BaseTest;
+import hooks.BrowserStackBaseTest;
 import jdk.jfr.Description;
 import jdk.jfr.Name;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.cartpage.CartPage;
 import pages.dashboardpage.DashboardPage;
 import pages.loginpage.LoginPage;
+import utitlites.ExtentTestNGListener;
 import utitlites.UtilityMethods;
 
 import static java.lang.Integer.parseInt;
@@ -18,6 +21,7 @@ import static utitlites.ExtentReportManager.test;
 import static utitlites.UtilityMethods.*;
 import static webdriver.WebDriverManager.getDriver;
 
+@Listeners(utitlites.ExtentTestNGListener.class)
 public class TaskFourTests extends BaseTest {
 
     LoginTests loginTests = new LoginTests();

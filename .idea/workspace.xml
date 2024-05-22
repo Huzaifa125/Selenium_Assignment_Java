@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3b9e5c3-84bb-4d4b-89e2-118ebf211436" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utitlites/FilterElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/browserstack.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hooks/BrowserStackBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webdriver/BrowserStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sauce_config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/browserstacktestng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/dashboardpage/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/dashboardpage/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/dashboardpage/DashboardPageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/dashboardpage/DashboardPageLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utitlites/UtilityMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utitlites/UtilityMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TaskFourTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TaskFourTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hooks/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hooks/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/loginpage/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/loginpage/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webdriver/WebDriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webdriver/WebDriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/intermediate/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TaskFourTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/intermediate/tests/TaskFourTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +33,27 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="enabledProfiles">
+      <list>
+        <option value="local" />
+      </list>
+    </option>
+    <option name="disabledProfiles">
+      <list>
+        <option value="browserstack" />
+      </list>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -39,29 +66,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.SeleniumPractice [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTests.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium_Assignment&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.codeium.AppSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.SeleniumPractice [compile].executor": "Run",
+    "Maven.SeleniumPractice [install].executor": "Run",
+    "Maven.SeleniumPractice [test].executor": "Run",
+    "Maven.SeleniumPractice [verify].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/browserstacktestng.xml.executor": "Run",
+    "TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/browsertestng.xml.executor": "Run",
+    "TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/testng.xml.executor": "Run",
+    "TestNG.LoginTests.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/huzaifa.saad_venture/IdeaProjects/Venturedive_RestAssured_Framework/Huzaifa_API_Assignment",
+    "onboarding.tips.debug.path": "C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "com.codeium.AppSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\huzaifa.saad_venture\IdeaProjects\Selenium Practice\src\main\resources\drivers" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\huzaifa.saad_venture\IdeaProjects\Selenium Practice" />
+      <recent name="C:\Users\huzaifa.saad_venture\IdeaProjects\Selenium Practice\src\test\resources" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/browserstacktestng.xml">
+    <configuration name="C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/browserstacktestng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumPractice" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/browserstacktestng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumPractice" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
@@ -74,6 +120,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/browserstacktestng.xml" />
         <item itemvalue="TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/testng.xml" />
       </list>
     </recent_temporary>
@@ -88,6 +135,17 @@
       <updated>1715510159350</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

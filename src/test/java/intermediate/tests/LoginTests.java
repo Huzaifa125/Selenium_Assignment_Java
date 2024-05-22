@@ -1,7 +1,8 @@
-package tests;
+package intermediate.tests;
 
 import com.aventstack.extentreports.Status;
 import hooks.BaseTest;
+import hooks.BrowserStackBaseTest;
 import jdk.jfr.Description;
 import jdk.jfr.Name;
 import org.testng.Assert;
@@ -16,7 +17,7 @@ import static webdriver.WebDriverManager.getDriver;
 
 
 @Listeners(utitlites.ExtentTestNGListener.class)
-public class LoginTests extends BaseTest {
+public class LoginTests extends BrowserStackBaseTest {
 
 
     @Test

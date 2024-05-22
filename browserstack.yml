@@ -1,0 +1,18 @@
+userName: huzaifasaad_QcTFVi
+accessKey: pBXzv1PRWXRimsj8mntz
+platforms:
+  - os: Windows
+    osVersion: 10
+    browserName: Chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: 10
+    browserName: Edge
+    browserVersion: latest
+  - os: Windows
+    osVersion: 10
+    browserName: Firefox
+    browserVersion: latest
+browserstackLocal: true
+buildName: browserstack-build-1
+projectName: First Browser Stack run

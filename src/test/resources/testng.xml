@@ -1,30 +1,53 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="CrossBrowserTestSuite" parallel="tests" thread-count="3">
+<suite name="CrossBrowserTestSuite">
     <test name="ChromeTest">
         <parameter name="browser" value="chrome"/>
         <classes>
             <!--            <class name="tests.LoginTests" />-->
-            <class name="tests.TaskFourTests">
+            <class name="intermediate.tests.TaskFourTests">
 
-                <!--                <methods>-->
-                <!--                    <include name="verifyItemAmountAndQuantity"/>-->
-                <!--                    <include name="verifyTshirtsAndShoes"/>-->
-                <!--                </methods>-->
+                <methods>
+                    <include name="verifyItemAmountAndQuantity"/>
+                </methods>
             </class>
         </classes>
     </test>
-    <!--    <test name="FirefoxTest">-->
-    <!--        <parameter name="browser" value="firefox" />-->
-    <!--        <classes>-->
-    <!--            <class name="tests.LoginTests" />-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test name="EdgeTest">-->
-    <!--        <parameter name="browser" value="edge"/>-->
-    <!--        <classes>-->
-    <!--            <class name="tests.LoginTests"/>-->
-    <!--            &lt;!&ndash; Add more classes if needed &ndash;&gt;-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <!--            <class name="tests.LoginTests" />-->
+            <class name="intermediate.tests.TaskFourTests">
+
+                <methods>
+                    <include name="verifyItemAmountAndQuantity"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="EdgeTest">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <!--            <class name="tests.LoginTests" />-->
+            <class name="intermediate.tests.TaskFourTests">
+
+                <methods>
+                    <include name="verifyItemAmountAndQuantity"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--        <test name="FirefoxTest">-->
+    <!--            <parameter name="browser" value="firefox" />-->
+    <!--            <classes>-->
+    <!--                <class name="intermediate.tests.TaskFourTests" />-->
+    <!--            </classes>-->
+    <!--        </test>-->
+    <!--        <test name="EdgeTest">-->
+    <!--            <parameter name="browser" value="edge"/>-->
+    <!--            <classes>-->
+    <!--                <class name="intermediate.tests.TaskFourTests"/>-->
+    <!--                &lt;!&ndash; Add more classes if needed &ndash;&gt;-->
+    <!--            </classes>-->
+    <!--        </test>-->
     <!-- Add more test elements for other browsers if needed -->
 </suite>
