@@ -25,7 +25,7 @@ public class BaseTest {
     @BeforeMethod
     @Parameters("browser")
     public void setUp(Method method,@Optional String browser) {
-        WebDriverSetup.initializeDriverHeadless(browser);
+        WebDriverSetup.initializeDriverJenkins(browser);
         WebDriverSetup.getDriver().get(config.ConfigReader.getProperty("baseUrl"));
 
         try {

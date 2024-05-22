@@ -106,6 +106,38 @@ public class WebDriverSetup {
 
     }
 
+
+    public static WebDriver initializeDriverJenkins(String browser) {
+        WebDriver driver = null;
+
+        switch (browser) {
+            case "chrome":
+                System.setProperty("webdriver.chrome.driver", "linuxchromedriver");
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless");
+                driver = new ChromeDriver(chromeOptions);
+                break;
+            case "firefox":
+                System.setProperty("webdriver.gecko.driver", "linuxgeckodriver");
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addArguments("--headless");
+                driver = new FirefoxDriver(firefoxOptions);
+                break;
+            case "edge":
+                System.setProperty("webdriver.edge.driver", "linuxedgedriver");
+                driver = new EdgeDriver();
+                break;
+            default:
+                throw new IllegalArgumentException("Unsupported browser type: " + browser);
+        }
+        return driver;
+
+    }
+
+
+
+
+
     public static void initializeSauceLabsDriver(String browser) {
         ChromeOptions browserOptions = new ChromeOptions();
         browserOptions.setPlatformName("Windows 11");

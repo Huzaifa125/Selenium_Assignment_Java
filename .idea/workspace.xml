@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3b9e5c3-84bb-4d4b-89e2-118ebf211436" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hooks/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hooks/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webdriver/WebDriverSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webdriver/WebDriverSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/intermediate/tests/TaskFourTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/intermediate/tests/TaskFourTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +55,7 @@
     "TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/browsertestng.xml.executor": "Run",
     "TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/testng.xml.executor": "Run",
     "TestNG.LoginTests.executor": "Run",
+    "TestNG.TaskFourTests.verifyItemAmountAndQuantity.executor": "Run",
     "git-widget-placeholder": "jenkins",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/huzaifa.saad_venture/Documents/GitHub/jenkins-test",
@@ -95,9 +96,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TaskFourTests.verifyItemAmountAndQuantity" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="intermediate.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="intermediate.tests" />
+      <option name="MAIN_CLASS_NAME" value="intermediate.tests.TaskFourTests" />
+      <option name="METHOD_NAME" value="verifyItemAmountAndQuantity" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/testng.xml" />
+        <item itemvalue="TestNG.TaskFourTests.verifyItemAmountAndQuantity" />
         <item itemvalue="TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/browserstacktestng.xml" />
       </list>
     </recent_temporary>
