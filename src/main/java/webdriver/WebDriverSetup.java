@@ -5,7 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -51,6 +53,54 @@ public class WebDriverSetup {
                 default:
                     throw new IllegalArgumentException("Invalid browser specified: " + browser);
             }
+        driverInstance.manage().window().maximize();
+        setDriver(driverInstance);
+
+    }
+
+    public static void initializeDriverHeadless(String browser) {
+        WebDriver driverInstance;
+
+        switch(browser.toLowerCase()) {
+            case "chrome":
+//                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + ConfigReader.getProperty("chrome.driver.path"));
+                WebDriverManager.chromedriver().setup();
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless"); // Run headless
+                chromeOptions.addArguments("--no-sandbox");
+                chromeOptions.addArguments("--disable-dev-shm-usage");
+                chromeOptions.addArguments("--disable-gpu");
+                chromeOptions.addArguments("--window-size=1920,1080");
+                chromeOptions.addArguments("--disable-extensions");
+                driverInstance = new ChromeDriver(chromeOptions);
+                break;
+            case "firefox":
+//                    System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + ConfigReader.getProperty("firefox.driver.path"));
+                WebDriverManager.firefoxdriver().setup();
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addArguments("--headless"); // Run headless
+                firefoxOptions.addArguments("--no-sandbox");
+                firefoxOptions.addArguments("--disable-dev-shm-usage");
+                firefoxOptions.addArguments("--disable-gpu");
+                firefoxOptions.addArguments("--window-size=1920,1080");
+                firefoxOptions.addArguments("--disable-extensions");
+                driverInstance = new FirefoxDriver(firefoxOptions);
+                break;
+            case "edge":
+//                    System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + ConfigReader.getProperty("edge.driver.path"));
+                WebDriverManager.edgedriver().setup();
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("--headless"); // Run headless
+                edgeOptions.addArguments("--no-sandbox");
+                edgeOptions.addArguments("--disable-dev-shm-usage");
+                edgeOptions.addArguments("--disable-gpu");
+                edgeOptions.addArguments("--window-size=1920,1080");
+                edgeOptions.addArguments("--disable-extensions");
+                driverInstance = new EdgeDriver(edgeOptions);
+                break;
+            default:
+                throw new IllegalArgumentException("Invalid browser specified: " + browser);
+        }
         driverInstance.manage().window().maximize();
         setDriver(driverInstance);
 
