@@ -16,8 +16,7 @@ public class BaseTest {
 
 
     @BeforeClass
-    @Parameters("browser")
-    public void beforeClass(@Optional String browser) {
+    public void beforeClass() {
 
         ExtentReportManager.getInstance();
 
