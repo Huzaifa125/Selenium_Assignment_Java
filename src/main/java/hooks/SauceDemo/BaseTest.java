@@ -23,7 +23,7 @@ public class BaseTest {
     @BeforeMethod
     @Parameters("browser")
     public void setUp(Method method, @Optional String browser) {
-        WebDriverSetup.initializeDriver(browser);
+        WebDriverSetup.initializeDriverHeadless(browser);
         WebDriverSetup.getDriver().get(config.ConfigReader.getProperty("saucedemo.baseUrl"));
 
         try {
