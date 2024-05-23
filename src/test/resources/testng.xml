@@ -3,11 +3,9 @@
     <test name="ChromeTest">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <!--            <class name="tests.LoginTests" />-->
-            <class name="intermediate.tests.TaskFourTests">
-
+            <class name="advanced.tests.TaskThreeTests">
                 <methods>
-                    <include name="verifyItemAmountAndQuantity"/>
+                    <include name="sortItemLowToHigh"/>
                 </methods>
             </class>
         </classes>
@@ -15,11 +13,9 @@
     <test name="FirefoxTest">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <!--            <class name="tests.LoginTests" />-->
-            <class name="intermediate.tests.TaskFourTests">
-
+            <class name="advanced.tests.TaskThreeTests">
                 <methods>
-                    <include name="verifyItemAmountAndQuantity"/>
+                    <include name="sortItemLowToHigh"/>
                 </methods>
             </class>
         </classes>
@@ -27,11 +23,9 @@
     <test name="EdgeTest">
         <parameter name="browser" value="edge"/>
         <classes>
-            <!--            <class name="tests.LoginTests" />-->
-            <class name="intermediate.tests.TaskFourTests">
-
+            <class name="advanced.tests.TaskThreeTests">
                 <methods>
-                    <include name="verifyItemAmountAndQuantity"/>
+                    <include name="sortItemLowToHigh"/>
                 </methods>
             </class>
         </classes>

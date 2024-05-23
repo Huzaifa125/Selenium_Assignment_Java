@@ -1,27 +1,17 @@
-package hooks;
+package hooks.SauceDemo;
 
 import jdk.jfr.Description;
 import jdk.jfr.Name;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.ITestResult;
 import org.testng.annotations.*;
 import utitlites.ExtentReportManager;
-import webdriver.BrowserStack;
+import webdriver.WebDriverSetup;
 
 import java.lang.reflect.Method;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 import static utitlites.ExtentReportManager.extent;
 import static utitlites.ExtentReportManager.test;
 
-public class BrowserStackBaseTest {
-
-    public WebDriver driver;
+public class BaseTest {
 
     @BeforeClass
     public void beforeClass() {
@@ -31,10 +21,10 @@ public class BrowserStackBaseTest {
     }
 
     @BeforeMethod
-    @Parameters({"browser", "os", "osVersion", "browserVersion"})
-    public void setUp(Method method,String browser, String os, String osVersion, String browserVersion) {
-        BrowserStack.initializeBrowserStackDriver(browser, os, osVersion, browserVersion);
-        BrowserStack.getDriver().get("https://automationteststore.com/");
+    @Parameters("browser")
+    public void setUp(Method method, @Optional String browser) {
+        WebDriverSetup.initializeDriver(browser);
+        WebDriverSetup.getDriver().get(config.ConfigReader.getProperty("saucedemo.baseUrl"));
 
         try {
             test = extent.createTest(method.getName());
@@ -58,11 +48,15 @@ public class BrowserStackBaseTest {
 
     @AfterMethod
     public void tearDown() {
-        BrowserStack.quitDriver();
+        WebDriverSetup.quitDriver();
     }
 
     @AfterClass
     public void afterClass() {
         ExtentReportManager.flushReport();
     }
+
+
+
+
 }

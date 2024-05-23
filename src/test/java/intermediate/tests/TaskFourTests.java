@@ -1,20 +1,20 @@
 package intermediate.tests;
 
 import com.aventstack.extentreports.Status;
-import hooks.BaseTest;
+import hooks.AutomationTestStore.BaseTest;
 import jdk.jfr.Description;
 import jdk.jfr.Name;
 
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import pages.cartpage.CartPage;
-import pages.dashboardpage.DashboardPage;
-import pages.loginpage.LoginPage;
+import pages.AutomationTestStore.cartpage.CartPage;
+import pages.AutomationTestStore.dashboardpage.DashboardPage;
+import pages.AutomationTestStore.loginpage.LoginPage;
 import utitlites.UtilityMethods;
 
 import static java.lang.Integer.parseInt;
-import static pages.dashboardpage.DashboardPageLocators.*;
+import static pages.AutomationTestStore.dashboardpage.DashboardPageLocators.*;
 import static utitlites.ExtentReportManager.test;
 import static utitlites.UtilityMethods.*;
 import static webdriver.WebDriverSetup.getDriver;
@@ -23,9 +23,7 @@ import static webdriver.WebDriverSetup.getDriver;
 public class TaskFourTests extends BaseTest {
 
 
-    LoginTests loginTests = new LoginTests();
 
-    CartPage cartPage = new CartPage(getDriver());
 
     @Test
     @Name("Scenario 1")

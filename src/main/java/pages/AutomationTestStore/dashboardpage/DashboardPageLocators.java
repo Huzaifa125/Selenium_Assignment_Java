@@ -1,4 +1,4 @@
-package pages.dashboardpage;
+package pages.AutomationTestStore.dashboardpage;
 
 import org.openqa.selenium.By;
 

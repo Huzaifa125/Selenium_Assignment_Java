@@ -1,15 +1,15 @@
 package intermediate.tests;
 
 import com.aventstack.extentreports.Status;
-import hooks.BaseTest;
+import hooks.AutomationTestStore.BaseTest;
 import jdk.jfr.Description;
 import jdk.jfr.Name;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import pages.loginpage.LoginPage;
+import pages.AutomationTestStore.loginpage.LoginPage;
 
-import static pages.loginpage.LoginPageLocators.*;
+import static pages.AutomationTestStore.loginpage.LoginPageLocators.*;
 import static utitlites.ExtentReportManager.test;
 import static utitlites.UtilityMethods.getTextFromElement;
 import static webdriver.WebDriverSetup.getDriver;

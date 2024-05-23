@@ -1,4 +1,4 @@
-package pages.dashboardpage;
+package pages.AutomationTestStore.dashboardpage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,7 +8,7 @@ import utitlites.UtilityMethods;
 
 import java.util.List;
 
-import static pages.cartpage.CartPageLocators.cart_BTN;
+import static pages.AutomationTestStore.cartpage.CartPageLocators.cart_BTN;
 import static utitlites.UtilityMethods.selectTextFromDropDown;
 import static webdriver.WebDriverSetup.getDriver;
 

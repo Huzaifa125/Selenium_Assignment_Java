@@ -1,4 +1,4 @@
-package hooks;
+package hooks.AutomationTestStore;
 
 import jdk.jfr.Description;
 import jdk.jfr.Name;
@@ -25,8 +25,8 @@ public class BaseTest {
     @BeforeMethod
     @Parameters("browser")
     public void setUp(Method method,@Optional String browser) {
-        WebDriverSetup.initializeDriverHeadless(browser);
-        WebDriverSetup.getDriver().get(config.ConfigReader.getProperty("baseUrl"));
+        WebDriverSetup.initializeDriver(browser);
+        WebDriverSetup.getDriver().get(config.ConfigReader.getProperty("automationteststore.baseUrl"));
 
         try {
             test = extent.createTest(method.getName());

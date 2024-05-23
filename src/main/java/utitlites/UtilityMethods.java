@@ -45,11 +45,25 @@ public class UtilityMethods {
         dropdown.selectByVisibleText(value);
     }
 
+    public static void selectValueFromDropDown(WebElement element, String value) {
+        if (element == null || value == null || value.isEmpty()) {
+            throw new IllegalArgumentException("Element or value cannot be null or empty");
+        }
+        Select dropdown = new Select(element);
+        dropdown.selectByValue(value);
+    }
+
 
     public static int countElements(By locator) {
 
         List<WebElement> elements = getDriver().findElements(locator);
         return elements.size();
+
+    }
+
+    public static List<WebElement> getElements(By locator) {
+
+        return getDriver().findElements(locator);
 
     }
 
