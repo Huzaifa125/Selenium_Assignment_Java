@@ -59,7 +59,7 @@ public class WebDriverSetup {
     }
 
     public static void initializeDriverHeadless(String browser) {
-        WebDriver driverInstance;
+        RemoteWebDriver driverInstance;
 
         switch(browser.toLowerCase()) {
             case "chrome":
