@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3b9e5c3-84bb-4d4b-89e2-118ebf211436" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/advanced/tests/TaskFourTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AutomationTestStore/dashboardpage/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AutomationTestStore/dashboardpage/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AutomationTestStore/dashboardpage/DashboardPageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AutomationTestStore/dashboardpage/DashboardPageLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utitlites/UtilityMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utitlites/UtilityMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utitlites/WaitUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utitlites/WaitUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/intermediate/tests/TaskFourTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/intermediate/tests/TaskFourTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +50,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="7562f920a229ebd7152ad0b9c9d748816c6c669d" />
+        <entry key="$PROJECT_DIR$" value="95a4e47b99eb44073036ae8fe1b4b3501d96f36e" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,7 +80,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/browserstacktestng.xml.executor": "Run",
     "TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/browsertestng.xml.executor": "Run",
-    "TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/testng.xml.executor": "Debug",
+    "TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/testng.xml.executor": "Run",
     "TestNG.LoginTests.executor": "Run",
     "TestNG.TaskFourTests.verifyItemAmountAndQuantity.executor": "Run",
     "git-widget-placeholder": "jenkins",

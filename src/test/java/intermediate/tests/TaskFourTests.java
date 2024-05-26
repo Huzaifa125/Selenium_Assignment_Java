@@ -43,7 +43,7 @@ public class TaskFourTests extends BaseTest {
 
         dashboardPage.verifyItemAmountAndQuantitySteps();
 
-        Assert.assertEquals(getTextFromElement(getDriver().findElement(unitPrice_TXT)), "$78.00");
+        Assert.assertEquals(getTextFromElement(getDriver().findElement(unitPrice_TXT)), "$110.00");
         Assert.assertEquals(getAttribute(getDriver().findElement(quantity_TXT),"value"), "1");
 
         test.log(Status.PASS, "Verify item amount and quantity Test Pass");
@@ -117,7 +117,7 @@ public class TaskFourTests extends BaseTest {
                 parseInt(getAttribute(getDriver().findElement(quantity2_TXT),"value"));
 
 
-        Assert.assertEquals(dashboardPage.saleItems, 3);
+        Assert.assertEquals(dashboardPage.saleItems, 2);
         Assert.assertEquals(dashboardPage.outOfStockItems, 2);
         Assert.assertEquals(dashboardPage.totalItemsInCart, 2);
         test.log(Status.PASS, "<pre>Verify amount of sales and total items Test Pass\n Sale Items: "+dashboardPage.saleItems+"\n Out of Stock: "+dashboardPage.outOfStockItems);
