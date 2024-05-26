@@ -5,62 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3b9e5c3-84bb-4d4b-89e2-118ebf211436" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/screenshots/2024-May-23 (Thursday) TIME_06-42-41 (PM)verifyItemAmountAndQuantity_failure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/2024-May-23 (Thursday) TIME_10-47-40 (PM)validLogin_failure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/2024-May-23 (Thursday) TIME_10-47-48 (PM)inValidLogin_failure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/2024-May-23 (Thursday) TIME_11-51-12 (PM)sortItemLowToHigh_failure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/2024-May-23 (Thursday) TIME_11-51-36 (PM)sortItemLowToHigh_failure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/2024-May-23 (Thursday) TIME_11-56-26 (PM)sortItemLowToHigh_failure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/2024-May-24 (Friday) TIME_12-00-30 (AM)sortItemLowToHigh_failure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/2024-May-24 (Friday) TIME_12-05-47 (AM)sortItemLowToHigh_failure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/2024-May-24 (Friday) TIME_12-08-38 (AM)sortItemLowToHigh_failure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/2024-May-24 (Friday) TIME_12-15-15 (AM)sortItemLowToHigh_failure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/2024-May-24 (Friday) TIME_12-28-38 (AM)sortItemLowToHigh_failure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hooks/SauceDemo/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SauceDemo/dashboardpage/DashboardPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SauceDemo/dashboardpage/DashboardPageLocators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SauceDemo/loginpage/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SauceDemo/loginpage/LoginPageLocators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/advanced/tests/TaskThreeTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/intermediate/tests/TaskThreeTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_04-30-24 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_05-33-22 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_05-41-21 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_06-11-15 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_06-41-16 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_07-11-16 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_07-41-19 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_08-11-16 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_08-41-30 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_09-11-30 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_09-41-38 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_10-09-30 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_10-38-58 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_10-47-31 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_10-50-12 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_11-49-18 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_11-50-57 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-23 (Thursday) TIME_11-56-17 (PM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-24 (Friday) TIME_12-00-21 (AM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-24 (Friday) TIME_12-05-39 (AM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-24 (Friday) TIME_12-08-30 (AM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-24 (Friday) TIME_12-15-06 (AM)_Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/2024-May-24 (Friday) TIME_12-28-27 (AM)_Report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/browserstack-javaagent.debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/browserstack-javaagent.debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hooks/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hooks/AutomationTestStore/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hooks/BrowserStackBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hooks/AutomationTestStore/BrowserStackBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/cartpage/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AutomationTestStore/cartpage/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/cartpage/CartPageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AutomationTestStore/cartpage/CartPageLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/dashboardpage/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AutomationTestStore/dashboardpage/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/dashboardpage/DashboardPageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AutomationTestStore/dashboardpage/DashboardPageLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/loginpage/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AutomationTestStore/loginpage/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/loginpage/LoginPageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AutomationTestStore/loginpage/LoginPageLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utitlites/FilterElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utitlites/FilterElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/advanced/tests/TaskFourTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AutomationTestStore/dashboardpage/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AutomationTestStore/dashboardpage/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AutomationTestStore/dashboardpage/DashboardPageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AutomationTestStore/dashboardpage/DashboardPageLocators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utitlites/UtilityMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utitlites/UtilityMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utitlites/WaitUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utitlites/WaitUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/intermediate/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/intermediate/tests/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/intermediate/tests/TaskFourTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/intermediate/tests/TaskFourTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,9 +26,35 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/jenkins" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="3f538d0e8789377c298132da847ebd9207246a3b" />
+        <entry key="$PROJECT_DIR$" value="7562f920a229ebd7152ad0b9c9d748816c6c669d" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,7 +84,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/browserstacktestng.xml.executor": "Run",
     "TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/browsertestng.xml.executor": "Run",
-    "TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/testng.xml.executor": "Run",
+    "TestNG.C:/Users/huzaifa.saad_venture/IdeaProjects/Selenium Practice/src/test/resources/testng.xml.executor": "Debug",
     "TestNG.LoginTests.executor": "Run",
     "TestNG.TaskFourTests.verifyItemAmountAndQuantity.executor": "Run",
     "git-widget-placeholder": "jenkins",
@@ -206,6 +182,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/AutomationTestStore/dashboardpage/DashboardPage.java</url>
+          <line>208</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

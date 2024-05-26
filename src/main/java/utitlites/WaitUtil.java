@@ -16,37 +16,40 @@ import static webdriver.WebDriverSetup.*;
 public class WaitUtil {
 
 
-    public static WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+    private static WebDriver driver;
+    private static WebDriverWait wait;
 
-    public WaitUtil(WebDriver driver) {
-        setDriver(driver);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Default timeout is 10 seconds
+    public WaitUtil(WebDriver driver, WebDriverWait wait) {
+        WaitUtil.driver = driver;
+        WaitUtil.wait = wait;
     }
 
     public static void implicitWait(long seconds) {
         getDriver().manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
     }
 
-    public static boolean waitUntilElementIsClickable(By locator) {
+    public static WebElement waitForElementToBeClickable(By locator, int timeout) {
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(locator));
-            return true;
-        }catch (TimeoutException ex){
-            return false;
+            return new WebDriverWait(driver, Duration.ofSeconds(timeout))
+                    .until(ExpectedConditions.elementToBeClickable(locator));
+        } catch (Exception e) {
+            System.out.println("Element not clickable: " + e.getMessage());
+            return null;
         }
     }
 
 
 
-    public boolean isElementVisible(By locator) {
+    public WebElement waitForElementToBeVisible(By locator, int timeout) {
         try {
-            WebElement element = getDriver().findElement(locator);
-            return element.isDisplayed();
-        } catch (NoSuchElementException e) {
-            System.out.println("Element not found or not visible, continuing with execution...");
+            return new WebDriverWait(driver, Duration.ofSeconds(timeout))
+                    .until(ExpectedConditions.visibilityOfElementLocated(locator));
+        } catch (Exception e) {
+            System.out.println("Element not visible: " + e.getMessage());
+            return null;
         }
-        return false;
     }
+
 
     public static WebElement waitForElementClickable(WebElement element) {
         return wait.until(ExpectedConditions.elementToBeClickable(element));
