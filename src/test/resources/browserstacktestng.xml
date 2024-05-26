@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowserTestSuite">
+
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome" />
+        <parameter name="os" value="Windows" />
+        <parameter name="osVersion" value="10" />
+        <parameter name="browserVersion" value="latest" />
+        <classes>
+            <class name="intermediate.tests.LoginTests" />
+        </classes>
+    </test>
+<!--    <test name="FirefoxTest">-->
+<!--        <parameter name="browserstack.username" value="huzaifasaad_QcTFVi" />-->
+<!--        <parameter name="browserstack.accessKey" value="pBXzv1PRWXRimsj8mntz" />-->
+<!--        <parameter name="browserstack.browser" value="Firefox" />-->
+<!--        <parameter name="browserstack.browser_version" value="latest" />-->
+<!--        <parameter name="browserstack.os" value="Windows" />-->
+<!--        <parameter name="browserstack.os_version" value="10" />-->
+<!--        <classes>-->
+<!--            <class name="intermediate.tests.TaskFourTests" />-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="EdgeTest">-->
+<!--        <parameter name="browserstack.username" value="huzaifasaad_QcTFVi" />-->
+<!--        <parameter name="browserstack.accessKey" value="pBXzv1PRWXRimsj8mntz" />-->
+<!--        <parameter name="browserstack.browser" value="Edge" />-->
+<!--        <parameter name="browserstack.browser_version" value="latest" />-->
+<!--        <parameter name="browserstack.os" value="Windows" />-->
+<!--        <parameter name="browserstack.os_version" value="10" />-->
+<!--        <classes>-->
+<!--            <class name="intermediate.tests.TaskFourTests" />-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

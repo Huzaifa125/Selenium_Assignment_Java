@@ -7,8 +7,6 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 
-import static webdriver.WebDriverManager.getDriver;
-
 public class FilterElement extends UtilityMethods {
 
     private WebDriver driver;
@@ -30,6 +28,10 @@ public class FilterElement extends UtilityMethods {
 
         return filteredElements;
     }
+
+
+
+
 
 
 

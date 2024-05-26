@@ -1,4 +1,4 @@
-package pages.loginpage;
+package pages.AutomationTestStore.loginpage;
 
 import org.openqa.selenium.By;
 

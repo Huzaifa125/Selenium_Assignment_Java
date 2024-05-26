@@ -1,4 +1,4 @@
-package pages.cartpage;
+package pages.AutomationTestStore.cartpage;
 
 import org.openqa.selenium.By;
 

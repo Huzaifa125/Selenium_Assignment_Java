@@ -1,17 +1,11 @@
-package pages.cartpage;
+package pages.AutomationTestStore.cartpage;
 
-import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import utitlites.UtilityMethods;
 
 import java.util.List;
-import java.util.NoSuchElementException;
-
-import static utitlites.WaitUtil.wait;
-import static utitlites.WaitUtil.waitForTextToBePresent;
 
 public class CartPage extends CartPageLocators {
 

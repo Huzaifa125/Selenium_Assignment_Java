@@ -1,33 +1,33 @@
-package hooks;
+package hooks.AutomationTestStore;
 
 import jdk.jfr.Description;
 import jdk.jfr.Name;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 import utitlites.ExtentReportManager;
-import webdriver.WebDriverManager;
+import webdriver.BrowserStack;
 
 import java.lang.reflect.Method;
 
 import static utitlites.ExtentReportManager.extent;
 import static utitlites.ExtentReportManager.test;
 
+public class BrowserStackBaseTest {
 
-public class BaseTest {
-
+    public WebDriver driver;
 
     @BeforeClass
-    @Parameters("browser")
-    public void beforeClass(String browser) {
+    public void beforeClass() {
 
         ExtentReportManager.getInstance();
 
     }
 
     @BeforeMethod
-    @Parameters("browser")
-    public void setUp(Method method, String browser) {
-        WebDriverManager.initializeDriver(browser);
-        WebDriverManager.getDriver().get(config.ConfigReader.getProperty("baseUrl"));
+    @Parameters({"browser", "os", "osVersion", "browserVersion"})
+    public void setUp(Method method,String browser, String os, String osVersion, String browserVersion) {
+        BrowserStack.initializeBrowserStackDriver(browser, os, osVersion, browserVersion);
+        BrowserStack.getDriver().get("https://automationteststore.com/");
 
         try {
             test = extent.createTest(method.getName());
@@ -51,14 +51,11 @@ public class BaseTest {
 
     @AfterMethod
     public void tearDown() {
-        WebDriverManager.quitDriver();
+        BrowserStack.quitDriver();
     }
 
     @AfterClass
     public void afterClass() {
         ExtentReportManager.flushReport();
     }
-
-
-
 }

@@ -1,54 +1,53 @@
 package utitlites;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import webdriver.WebDriverManager;
 
 import java.time.Duration;
-import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
-import static webdriver.WebDriverManager.getDriver;
-import static webdriver.WebDriverManager.setDriver;
+import static webdriver.WebDriverSetup.*;
 
 public class WaitUtil {
 
-    private static WebDriver driver = new ChromeDriver();
 
-    public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    private static WebDriver driver;
+    private static WebDriverWait wait;
 
-    public WaitUtil(WebDriver driver) {
-        setDriver(driver);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Default timeout is 10 seconds
+    public WaitUtil(WebDriver driver, WebDriverWait wait) {
+        WaitUtil.driver = driver;
+        WaitUtil.wait = wait;
     }
 
-    public static boolean waitUntilElementIsClickable(By locator) {
-        try {
-            wait.until(ExpectedConditions.elementToBeClickable(locator));
-            return true;
-        }catch (TimeoutException ex){
-            return false;
-        }
-    }
-
-    public static void setImplicitWait(long seconds) {
+    public static void implicitWait(long seconds) {
         getDriver().manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
     }
 
-    public boolean isElementVisible(By locator) {
+    public static WebElement waitForElementToBeClickable(By locator, int timeout) {
         try {
-            WebElement element = getDriver().findElement(locator);
-            return element.isDisplayed();
-        } catch (NoSuchElementException e) {
-            System.out.println("Element not found or not visible, continuing with execution...");
+            return new WebDriverWait(driver, Duration.ofSeconds(timeout))
+                    .until(ExpectedConditions.elementToBeClickable(locator));
+        } catch (Exception e) {
+            System.out.println("Element not clickable: " + e.getMessage());
+            return null;
         }
-        return false;
     }
+
+
+
+    public WebElement waitForElementToBeVisible(By locator, int timeout) {
+        try {
+            return new WebDriverWait(driver, Duration.ofSeconds(timeout))
+                    .until(ExpectedConditions.visibilityOfElementLocated(locator));
+        } catch (Exception e) {
+            System.out.println("Element not visible: " + e.getMessage());
+            return null;
+        }
+    }
+
 
     public static WebElement waitForElementClickable(WebElement element) {
         return wait.until(ExpectedConditions.elementToBeClickable(element));

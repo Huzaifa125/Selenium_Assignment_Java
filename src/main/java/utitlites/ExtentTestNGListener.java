@@ -3,13 +3,13 @@ package utitlites;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
-import webdriver.WebDriverManager;
-import org.apache.commons.io.FileUtils;
+import webdriver.WebDriverSetup;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,7 +21,7 @@ import static utitlites.ExtentReportManager.test;
 public class ExtentTestNGListener extends TestListenerAdapter {
 
 
-    private WebDriverManager webDriverManager = new WebDriverManager();
+    private WebDriverSetup webDriverSetup = new WebDriverSetup();
 
     @Override
     public void onTestFailure(ITestResult result) {
@@ -33,7 +33,7 @@ public class ExtentTestNGListener extends TestListenerAdapter {
     }
 
     private void captureScreenshot(String methodName) {
-        WebDriver driver = webDriverManager.getDriver();
+        WebDriver driver = webDriverSetup.getDriver();
         if (driver == null) {
             System.out.println("WebDriver instance is null. Cannot capture screenshot.");
             return;

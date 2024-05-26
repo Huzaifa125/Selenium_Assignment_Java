@@ -1,13 +1,15 @@
 package utitlites;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import static webdriver.WebDriverManager.getDriver;
+import static webdriver.WebDriverSetup.getDriver;
 
 public class UtilityMethods {
 
@@ -45,6 +47,14 @@ public class UtilityMethods {
         dropdown.selectByVisibleText(value);
     }
 
+    public static void selectValueFromDropDown(WebElement element, String value) {
+        if (element == null || value == null || value.isEmpty()) {
+            throw new IllegalArgumentException("Element or value cannot be null or empty");
+        }
+        Select dropdown = new Select(element);
+        dropdown.selectByValue(value);
+    }
+
 
     public static int countElements(By locator) {
 
@@ -52,6 +62,19 @@ public class UtilityMethods {
         return elements.size();
 
     }
+
+    public static List<WebElement> getElements(By locator) {
+
+        return getDriver().findElements(locator);
+
+    }
+
+
+    public static void hoverOverElement(WebDriver driver, WebElement element) {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).perform();
+    }
+
 
 
     public static String getLastLetterFromElementText(By locator) {
